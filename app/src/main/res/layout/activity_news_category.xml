@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".NewsCategoryActivity">
+
+
+    <GridView android:id="@+id/gridView_news_category"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="4dip"
+        android:horizontalSpacing="4dip"
+        android:padding="4dip"/>
+</LinearLayout>

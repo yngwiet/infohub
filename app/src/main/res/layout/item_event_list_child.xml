@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="3dp">
+            <ImageView
+                android:id="@+id/iv_event_cover"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/event_cover"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/tv_event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event name not available"
+                android:textSize="17sp"
+                android:textColor="@color/list_item_text_color_selector"/>
+
+            <TextView android:id="@+id/tv_event_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start time not available"
+                android:textSize="15sp"
+                android:textColor="@color/list_item_text_color_selector"/>
+
+            <TextView android:id="@+id/tv_event_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="end time not available"
+                android:textSize="15sp"
+                android:textColor="@color/list_item_text_color_selector"/>
+
+            <TextView android:id="@+id/tv_event_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="event location not available"
+                android:textSize="15sp"
+                android:textColor="@color/list_item_text_color_selector"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_event_attending_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="attending: "
+            android:textColor="@color/list_item_text_color_selector"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView android:id="@+id/tv_event_maybe_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="maybe: "
+            android:textColor="@color/list_item_text_color_selector"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_event_attending_count"
+            android:layout_toEndOf="@+id/tv_event_attending_count"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp" />
+
+        <TextView android:id="@+id/tv_event_declined_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="declined: "
+            android:textColor="@color/list_item_text_color_selector"
+            android:textSize="15sp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_event_maybe_count"
+            android:layout_toEndOf="@+id/tv_event_maybe_count" />
+
+    </RelativeLayout>
+
+</LinearLayout>

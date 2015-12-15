@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="@dimen/activity_vertical_margin_large"
+    android:paddingBottom="@dimen/activity_vertical_margin_large"
+    android:paddingLeft="@dimen/activity_horizontal_margin_large"
+    android:paddingRight="@dimen/activity_horizontal_margin_large">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:text="@string/app_name"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/layout_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username_hint"
+                android:textColorHint="#b73e3b3b"
+                android:singleLine="true"/>
+
+            <EditText android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"/>
+
+            <LinearLayout android:id="@+id/layout_login_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Button android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_login"
+                    android:textAllCaps="false"/>
+
+                <Button android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_sign_up"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="8dp"/>
+
+            </LinearLayout>
+
+            <TextView android:id="@+id/tv_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="16sp"
+                android:text="@string/tv_forget_password"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_OR"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/button_facebook_login"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/facebook_button_selector"
+                android:text="@string/btn_facebook_login"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:drawableLeft="@mipmap/facebook_login_logo"
+                android:paddingLeft="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

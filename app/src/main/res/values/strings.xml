@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">KWinfo</string>
+    <string name="facebook_app_id">724704420963294</string>
+    <string name="parse_app_id">e9IsVnwNeT4cKFE2tqKE0LUFWxRl2Z3dVQZjJa0P</string>
+    <string name="parse_client_key">fyF35RnFnmDVzA6JjVeEAnG0ycUDE2LBClQyx3bC</string>
+    <string name="action_settings">Settings</string>
+    <!-- left top corner titles -->
+    <string name="title_activity_login">KWinfo Login</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_news_category">News Category</string>
+    <string name="title_activity_news">News</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <!-- menu items -->
+    <string name="menu_item_clear_disc_cache">clear image cache</string>
+    <string name="menu_news_update">update news</string>
+    <string name="menu_event_update">update events</string>
+    <string name="news">news</string>
+    <string name="events">events</string>
+    <string name="my_account">My account</string>
+    <!-- news categories -->
+    <string name="kw_news">Kitchener-Waterloo</string>
+    <string name="business_news">Business</string>
+    <string name="health_news">Health</string>
+    <string name="sci_tech_news">Science-Technology</string>
+    <!-- global settings -->
+    <string name="wifi_only">WIFI only</string>
+    <!-- EditText hint text -->
+    <string name="username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="sign_up_password_hint">Password: minimum length of 6</string>
+    <string name="confirm_password_hint">Re-enter password</string>
+    <string name="email_hint">Email: for password change</string>
+    <string name="search_key_hint">separate keywords by space</string>
+    <!-- buttons and TextViews-->
+    <string name="btn_login">Login</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="tv_forget_password">Forget Password?</string>
+    <string name="btn_create_account">Create Account</string>
+    <string name="tv_OR">OR</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_facebook_login">Log in with Facebook</string>
+    <string name="btn_facebook_link">Link with Facebook account</string>
+    <string name="tv_news_title_default">News title not available</string>
+    <string name="tv_news_description_default">News description not available</string>
+    <string name="tv_no_items">You have not store anything yet!</string>
+    <string name="tv_event_start_time">start: %1$s</string>
+    <string name="tv_event_end_time">end: %1$s</string>
+    <string name="tv_event_attending">attending: %1$d</string>
+    <string name="tv_event_maybe">maybe: %1$d</string>
+    <string name="tv_event_declined">declined: %1$d</string>
+    <string name="tv_keyword1">Search key:</string>
+    <string name="btn_apply">Search</string>
+    <!-- content description -->
+    <string name="iv_app_logo_content_description">app logo</string>
+    <!-- dialog -->
+    <string name="dialog_msg_logout">Are you sure you want to log out?</string>
+    <string name="dialog_btn_logout">Logout</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_title">I want to...</string>
+    <!-- toast -->
+    <string name="toast_login_fail">login failed</string>
+    <string name="toast_sign_up_login_success">sign up and login success</string>
+    <string name="toast_login_success">login success</string>
+    <string name="toast_link_facebook">please go to settings to link with Facebook account!</string>
+    <string name="toast_link_facebook_failed">link failed, please try again</string>
+    <string name="toast_link_facebook_success">link success</string>
+    <string name="toast_network_not_available">no available Internet connection</string>
+    <string name="toast_get_related_parse_objects_failed">Oops, something is wrong</string>
+    <string name="toast_news_marked">news marked</string>
+    <string name="toast_events_marked">event marked</string>
+    <string name="toast_search_key_alert">please enter search key!</string>
+</resources>

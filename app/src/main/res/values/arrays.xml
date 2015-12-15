@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_activity_dialog_list">
+        <item>mark as favourite</item>
+        <item>share to friends</item>
+    </string-array>
+
+    <string-array name="fav_news_dialog_list">
+        <item>delete this news</item>
+    </string-array>
+
+    <string-array name="fav_events_dialog_list">
+        <item>delete this event</item>
+    </string-array>
+
+    <string-array name="eventsList_fragment_dialog_list">
+        <item>mark as favourite</item>
+        <item>share to friends</item>
+        <item>set a reminder</item>
+    </string-array>
+</resources>
