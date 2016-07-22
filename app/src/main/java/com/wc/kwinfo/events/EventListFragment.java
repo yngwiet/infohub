@@ -7,14 +7,17 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
-import android.widget.Button;
+// import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -65,9 +68,10 @@ public class EventListFragment extends Fragment{
         if (fragmentView == null){
             fragmentView = inflater.inflate(R.layout.fragment_event_list, container, false);
             lv_events = (ListView) fragmentView.findViewById(android.R.id.list);
-            Button btn_search = (Button) fragmentView.findViewById(R.id.btn_search);
+            // Button btn_search = (Button) fragmentView.findViewById(R.id.btn_search);
             et_searchKey = (EditText) fragmentView.findViewById(R.id.et_search_key);
-            btn_search.setOnClickListener(btn_searchClickListener);
+            et_searchKey.setOnEditorActionListener(editTextSearchKeyListener);
+            // btn_search.setOnClickListener(btn_searchClickListener);
         }
 
         SharedPreferences sharedPreferences = mContext.getSharedPreferences("EventSearchKey", Context.MODE_PRIVATE);
@@ -125,7 +129,7 @@ public class EventListFragment extends Fragment{
         });
     }
 
-    View.OnClickListener btn_searchClickListener = new View.OnClickListener() {
+    /*View.OnClickListener btn_searchClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             String searchKey = et_searchKey.getText().toString();
@@ -137,6 +141,30 @@ public class EventListFragment extends Fragment{
             } else {
                 Toast.makeText(mContext, R.string.toast_search_key_alert, Toast.LENGTH_SHORT).show();
             }
+        }
+    };*/
+
+    /**
+     * listen EditText search action
+     */
+    TextView.OnEditorActionListener editTextSearchKeyListener = new TextView.OnEditorActionListener() {
+        @Override
+        public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
+            boolean handled = false;
+            if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                String searchKey = et_searchKey.getText().toString();
+                if (!searchKey.isEmpty()){
+                    editor.putString("searchKey", searchKey);
+                    editor.apply();
+                    Bundle parameters = buildParameters(searchKey);
+                    requestFacebookEvents(parameters);
+                } else {
+                    Toast.makeText(mContext, R.string.toast_search_key_alert, Toast.LENGTH_SHORT).show();
+                }
+                handled = true;
+            }
+
+            return handled;
         }
     };
 

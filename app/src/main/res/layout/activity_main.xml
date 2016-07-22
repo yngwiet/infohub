@@ -32,7 +32,7 @@
             android:layout_height="match_parent"
             android:text="@string/events"
             android:textSize="50sp"
-            android:textColor="@color/colorAccent"
+            android:textColor="#E91E63"
             android:onClick="onEventsBtnClick"/>
     </RelativeLayout>
 

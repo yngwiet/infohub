@@ -31,18 +31,19 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/search_key_hint"
                 android:singleLine="true"
-                android:textColorHint="#b73e3b3b"/>
+                android:textColorHint="#b73e3b3b"
+                android:imeOptions="actionSearch"/>
 
         </LinearLayout>
 
-        <Button android:id="@+id/btn_search"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:text="@string/btn_apply"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
+        <!--<Button android:id="@+id/btn_search"-->
+            <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:text="@string/btn_apply"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textAllCaps="false"/>-->
 
         <View
             android:layout_width="match_parent"
